@@ -51,11 +51,11 @@ require_once 'connection.php';
                         "<td>" . $datarow['mail']."</td>".
                         "<td>" . 
                         "<button
-                            style=\"padding: 10px 20px; font-weight: bold; border: none; border-radius: 8px; background-color: #6a0dad; color: white; cursor: pointer;\"
-                            onmouseover=\"this.style.backgroundColor='#8a2be2';\" 
-                            onmouseout=\"this.style.backgroundColor='#6a0dad';\">
-                            Update
-                        </button>" .
+                            style=\"padding: 10px 20px; font-weight: bold; border: none; border-radius: 8px; background-color: #007bff; color: white; cursor: pointer; \"
+                            onmouseover=\"this.style.backgroundColor='#0056b3';\" 
+                            onmouseout=\"this.style.backgroundColor='#007bff';\">
+                           <a href = \"edit.php?user_id={$datarow['id']}\" style=\"color: white; text-decoration: none;\"> Edit </a> 
+                        </button>" . ////edit.php ekt userge id ek yawanw (mek wenne get kiyn method eken), button ek click krm edit.php ekt ynw   ,text-decoration: none walin limk eke underline ek nathi krnw
                         "<button
                             style=\"padding: 10px 20px; font-weight: bold; border: none; border-radius: 8px; background-color: #ff004f; color: white; cursor: pointer; margin-left: 10px;\"
                             onmouseover=\"this.style.backgroundColor='#e6003f';\"
